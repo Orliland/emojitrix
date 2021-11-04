@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Emojitrix</title>
+    <link href="./css/index.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <h1 class="title">Emojitrix</h1>
+    </header>
+    <div class="emojitrix">
+      <div id="emojis-container" class="emojitrix__container"></div>
+      <div id="main-container" class="emojitrix__main">
+        <input
+          id="emoji-input"
+          type="text"
+          class="emojitrix__input"
+          maxlength="2"
+          value=""
+          autofocus
+          autocomplete="off"
+        />
+      </div>
+      <div class="emojitrix__add">
+        <button id="unshift-btn" class="emojitrix__add-btn">+</button>
+        <button id="push-btn" class="emojitrix__add-btn">+</button>
+      </div>
+      <div class="emojitrix__del">
+        <button id="shift-btn" class="emojitrix__del-btn">-</button>
+        <button id="pop-btn" class="emojitrix__del-btn">-</button>
+      </div>
+      <button id="active-btn" class="emojitrix__active">🤜🤛</button>
+      <button id="repeat-btn" class="emojitrix__active">🔁</button>
+    </div>
+    <footer>
+      <p class="credits">
+        <a href="https://scrimba.com/learn/frontend">Scrimba </a>Project by
+        <a href="https://twitter.com/Orliland">Orliland</a>
+      </p>
+    </footer>
+
+    <script src="./js/index.js"></script>
+  </body>
+</html>
